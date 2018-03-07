@@ -1,0 +1,51 @@
+.navigation{
+    position: fixed;
+    top: 0;
+    right: 3rem;
+    margin-top: 3rem;
+    z-index: 9999;
+
+    &__checkbox{
+        display: none;
+    }
+    &__button{
+        display: block;
+        width: 5.5rem;
+        height: 5.5rem;
+        border-radius: 50%;
+        background-color: var(--color-secondary);
+        // box-shadow: var(--shadow);
+        backface-visibility: hidden;    
+    }
+    &__icon{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);          
+        
+
+        &,
+        &:before,
+        &:after{
+            display: block;
+            content: " ";
+            width: 3rem;
+            height: 2.5px;
+            background-color: var(--color-white);
+            position: absolute;  
+            transition: all .2s cubic-bezier(1, 0.15, 0.05, 1.37);
+            
+        }
+        &::before{
+            top: -9px;
+        }
+        &::after{
+            top: 9px;
+        }
+    }
+    &__button:hover &__icon::before{
+        top: -10px;
+    }
+    &__button:hover &__icon::after{
+        top: 10px;
+    }
+}

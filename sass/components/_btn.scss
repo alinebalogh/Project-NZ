@@ -1,0 +1,31 @@
+.btn{
+    &,
+    &:link{
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-weight: 400;
+        padding: 1.8rem;
+        border: none;        
+        color: var(--color-white);
+        background-color: #FC5C22;
+        border-radius: 100px;
+        // border: solid 2px var(--color-grey);
+        // box-shadow: 0 1px 10rem rgba(#FFF,.2);
+        transition: all .2s ease;
+    }
+    &:hover{
+        transform: translateY(-.51rem);
+        box-shadow: 0 1rem 1rem rgba(#000,.2);
+    }
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+    }
+
+    &-big{
+        width: 22rem;
+    }
+}

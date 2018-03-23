@@ -4,10 +4,6 @@
     background-color: rgba(#000, .5);
     position: relative;
     overflow: hidden;
-    // display: flex;
-    // //  flex-direction: column;
-    // justify-content: center;    
-    // align-items: center;        
 
     &__logo-box{
         padding: 4rem 4rem;
@@ -18,13 +14,6 @@
         fill: #FFF;
     }
     &__heading-box{
-        // width: 100%;
-        // height: 100%;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        // position: absolute;
-        // top: 100px;
     }
     &__back-video{
         position: absolute;
@@ -36,17 +25,21 @@
         opacity: .6;
         z-index: -1;
         overflow: hidden;
+        
     }
     &__text-box{
-        margin-top: 14rem;
+        padding-left: 5rem;
+        margin-top: 4%;
+        margin-left: 15rem;
         flex: 1;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;    
-        align-items: center;        
-        // transform: translateY(100px);        
+        align-items: flex-start;        
         opacity: 1;
-
+        border-left: solid 8px rgba($rgba-color-secondary, .6);
+        width: 80%;
+        &,
         & > *{
             animation: moveUp 2s cubic-bezier(0.38, 0.02, 0.72, 1.79);
         }
@@ -60,8 +53,33 @@
         margin: 2rem 0;    
     }
     &__text-span{
+        font-weight: 400;
+        margin-bottom: 5rem;
         display: flex;
-        justify-content: center;    
-        align-items: center;
+        font-size: 6rem;
+        letter-spacing: .5rem;
+        background-image: linear-gradient(to bottom right, #FC5C22 , #FC5C22);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-transform: capitalize;
+
+        &-nz{
+            font-weight: 700;
+            background-image: var(--gradient-blue);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    }
+
+    &__nz--flag{
+        width: 16rem;
+        height: auto; 
+        // margin: 0 auto;
+        margin-top: 5rem; 
+        box-shadow: var(--shadow);
+        animation-fill-mode: backwards;
+        animation-delay: .5s;
     }
 }

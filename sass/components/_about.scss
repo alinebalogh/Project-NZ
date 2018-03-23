@@ -1,0 +1,69 @@
+.about{
+    height: 80vh;
+    position: relative;
+    padding-top: 5rem;
+
+    &__img--box{
+        width: 38%;
+        height: 110%;
+        background-image: var(--gradient-orange);
+        position: absolute;
+        top: -8rem;
+        right: 10rem;
+        box-shadow: var(--shadow);
+        padding-top: 20rem;
+    }
+
+    &__img{
+        display: flex;
+        align-items: center;
+        margin-top: 3rem;
+        background-color: rgba(245, 215, 204, 0.0912);
+        &--content{
+            font-size: 1.6rem;
+            font-weight: 400;            
+            color: var(--color-grey-light);
+        }
+
+    }
+    &__caption{
+        font-weight: 600;
+        margin-bottom: 10px;
+    }   
+    &__shape{
+        position: relative;
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        transform: translateX(-3rem);
+        color: var(--color-grey-dark);
+        z-index: 110;
+        box-shadow: var(--shadow);
+    }
+    &__image{
+        height: 100%; 
+
+    }
+    
+
+    &__content{
+        display: flex;
+        width: 50%;
+        height: 100%;
+        padding: 2rem 5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text{
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 2.5rem;
+        word-break: break-all;
+        color: currentColor;
+    }
+}

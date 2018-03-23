@@ -3,9 +3,18 @@
 :root{
 
     --color-secondary: #FC5C22;
+
     --color-black: #000;
+    --color-grey-dark: rgb(29, 29, 29);
     --color-grey: rgb(214, 203, 203);
+    --color-grey-light: #EEE;
     --color-white: #FFF;
-    --shadow: 0 1rem 1rem rgba(#000,.1);
-    --gradient-blue: linear-gradient(to bottom right, rgba(46, 143, 170, 0.795), rgba(83, 183, 211, 0.795));
+
+    --shadow: 0 1rem 1rem rgba(#000,.31);
+    --color-blue: #000066;
+    --gradient-blue: linear-gradient(110deg, #000066 10%, #FC5C22);
+    --gradient-orange: linear-gradient(to bottom left, #FC5C22, rgb(212, 120, 44));
 }   
+
+$rgba-color-secondary: #FC5C22;
+$color-white: #FFF;

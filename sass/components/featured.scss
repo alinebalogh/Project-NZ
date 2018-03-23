@@ -1,0 +1,84 @@
+.featured{
+
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    backface-visibility: hidden;
+
+    &__article{
+        position: relative;
+        flex: 1;
+        margin: 0 auto;
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: flex 0.4s cubic-bezier(0.74, -0.42, 0.02, 1.57);
+        backface-visibility: hidden;
+        overflow: hidden;
+
+        & > p{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);    
+            font-size: 5rem;            
+            // font-family: 'Indie Flower', cursive;
+            font-family: 'Shadows Into Light Two';
+            color: var(--color-white);            
+            backface-visibility: hidden;
+            transition: font-size 0.4s;
+        }
+        & > a{            
+            opacity: 0;
+            bottom: -10rem;   
+            // transition: all 12s cubic-bezier(0.74, -0.42, 0.02, 1.57);
+        }
+    }
+
+
+}
+
+.art-1{
+    background-image: url("../../img/Interchange-min.jpg");       
+}
+.art-2{
+    background-image: url("../../img/SouthIsland-min.jpg");
+}
+.art-3{
+    background-image: url("../../img/NewZealand-min.jpg");
+    
+}
+.art-4{
+    background-image: url("../../img/NorthIsland-min.jpg");
+}
+.art-5{
+    background-image: url("../../img/RoadTrip-min.jpg");
+}
+
+.article__open{
+    flex: 2;
+    & > p{
+        // transform: rotate(3deg);
+        font-size: 6.5rem;
+    }
+    & > a{
+        animation: niceOpacity .4s ease-in-out;
+        animation-fill-mode: forwards;
+        
+    }
+}
+
+
+
+@keyframes niceOpacity{
+    
+    60%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        bottom: 15rem;
+    }    
+};
